@@ -1,0 +1,69 @@
+﻿﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nowPark.me - Parking Reinvented</title>
+    <meta name="description=" content="What if parking could be stress-free, time-saving and really fun? Be among the first to find out how this is possible. Subscribe to get a special surprise when we launch.">
+    <link rel="icon" type="image/png" href="~/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        @*@Styles.Render("~/Content/bootstrap.min.css")*@
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="~/Content/css/flexslider.css" rel="stylesheet" />
+        <link href="~/Content/css/styles.css" rel="stylesheet" />
+        <link href="~/Content/css/queries.css" rel="stylesheet" />
+        <link href="~/Content/css/animate.css" rel="stylesheet" />
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    @*@Styles.Render("~/Content/css")*@
+        @*@Scripts.Render("~/bundles/modernizr")*@
+    <script src="~/Scripts/js/modernizr.js"></script>
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function s(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, r = document, f = window, e = "script", o = r.createElement(e), i, u; for (o.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", r.getElementsByTagName(e)[0].parentNode.appendChild(o), t.cookie = r.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) s("track" + i.pop()); return config.disableExceptionTracking || (i = "onerror", s("_" + i), u = f[i], f[i] = function (config, r, f, e, o) { var s = u && u(config, r, f, e, o); return s !== !0 && t["_" + i](config, r, f, e, o), s }), t
+        }({
+            instrumentationKey: "f1b18893-8a2e-45f8-9a8b-7ea03ea80098"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+    <!-- Google analytics code -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63052892-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body id="top">
+        @RenderBody()
+
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @*@Scripts.Render("~/bundles/jquery")*@
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="~/Scripts/js/waypoints.min.js"></script>
+        <script src="~/Scripts/js/bootstrap.min.js"></script>
+        <script src="~/Scripts/js/scripts.js"></script>
+        <script src="~/Scripts/js/jquery.flexslider.js"></script>
+
+
+</body>
+</html>
