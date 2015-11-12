@@ -17,6 +17,54 @@ namespace nowpark.WebSite.Controllers
         // GET: Subscribers
         public ActionResult Index()
         {
+            //Block of code for manually adding subscribers in the database
+//            string[] subscribers = new string[] {
+//               "mishevivan@gmail.com",
+                //"andrijana.djurovic@gmail.com",
+                //"gokovet@hotmail.com",
+                //"teddy@g6Solutions.com",
+                //"dani.milosheska@gmail.com",
+                //"ivanka_86@hotmail.com",
+                //"risted@gmail.com",
+                //"ilayd@me.com",
+                //"slobodan.joveski@ivote.mk",
+                //"stojanka88@hotmail.com",
+                //"gpancic@gmail.com",
+                //"stojankakoceva@gmail.com",
+                //"aleksandar_vasiloski@hotmail.com",
+                //"goce.stojcev@gmail.com",
+                //"yanche@t-home.mk",
+                //"anastasijadespotovska@hotmail.com",
+                //"rizagfx@gmail.com",
+                //"mitevz@gmail.com",
+                //"Naumovska.angela@hotmail.com",
+                //"damir@dash.ba",
+                //"pepica_m@hotmail.com",
+                //"zjankuloski51@gmail.com",
+                //"plavjan@hotmail.com",
+                //"miki84sk@gmail.com",
+                //"atanasova.jasna@gmail.com",
+                //"Todor.popovski@gmail.com",
+                //"mvelkovski33@yahoo.ca",
+                //"Nikola@e.com",
+                //"markovski03@yahoo.com",
+                //"elena.sekulovska86@gmail.com",
+                //"martinovska_i@hotmail.com",
+                //"peter.trapp@pioneers.io",
+                //"nikola@ebusiness.com.mk"
+                //};
+//            foreach (var item in subscribers)
+//            {
+                
+//                if (db.Subscribers.SingleOrDefault(x =>x.Email == item)==null)
+//                {
+//                    Subscriber subscriber = new Subscriber();   
+//                    subscriber.Email = item;
+//                    db.Subscribers.Add(subscriber);
+//                    db.SaveChanges();
+//                }
+//            }
+            
             return View(db.Subscribers);
         }
 
